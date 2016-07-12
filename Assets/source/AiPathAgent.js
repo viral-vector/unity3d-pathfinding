@@ -105,4 +105,4 @@ function OnDrawGizmos(){
 	}
 }
 
-@script AddComponentMenu ("FPX/PathFinding/AIPathAgent")
+@script AddComponentMenu ("ViralVector/PathFinding/AIPathAgent")

@@ -8,4 +8,4 @@ class PathReceiver extends MonoBehaviour{ //Simple Class To Receieve Paths
 		currentPath = path;
 	}
 }
-@script AddComponentMenu ("FPX/PathFinding/PathReceiver")
+@script AddComponentMenu ("ViralVector/PathFinding/PathReceiver")

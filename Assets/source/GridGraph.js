@@ -140,4 +140,4 @@ private function DebugDraw(origin : Vector3, numRows : int, numCols : int, cellS
 	}
 }
 
-@script AddComponentMenu ("FPX/PathFinding/GridGraph")
+@script AddComponentMenu ("ViralVector/PathFinding/GridGraph")

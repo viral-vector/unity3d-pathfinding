@@ -280,4 +280,4 @@ private function SearchNode(node : Vector3,radius : int,height : int,obstacleLay
 	return nodeS;
 }
 
-@script AddComponentMenu ("FPX/PathFinding/PathFinder")
+@script AddComponentMenu ("ViralVector/PathFinding/PathFinder")
