@@ -209,14 +209,20 @@ private function ReturnPath(endNode : Vector3, startNode : Vector3, searchDictio
 	var node : Vector3 = endNode; //Start At EndNode
 	var pathNode : Vector3 = new Vector3(); //Start At EndNode
 	var path : List.<Vector3> = new List.<Vector3>();
-	
-	while(searchDictionary.ContainsKey(node) && searchDictionary[node].parentNode != null){
+
+	while(true)
+	{	
 		pathNode.x = node.x; 
-		pathNode.z = node.z;
-		pathNode.y = gridGraph.transform.position.y;
-		path.Add(pathNode);//Add This To front
-		//Move to Next Node
-		node = searchDictionary[node].parentNode;	
+	 	pathNode.z = node.z;
+	 	pathNode.y = gridGraph.transform.position.y;
+	 	path.Add(pathNode);//Add This To front
+	 	//Move to Next Node
+	 	node = searchDictionary[node].parentNode;
+
+	 	if(node != startNode)
+		{	
+			break;
+		}	
 	}
 	
 	pathNode.x = startNode.x; 
