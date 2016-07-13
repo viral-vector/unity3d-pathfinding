@@ -2,9 +2,6 @@
 
 import System.Collections.Generic;
 
-@script ExecuteInEditMode()
-
-
 enum SmoothingType{UnSmoothed,Raycast,Funnel}
 var smoothing : SmoothingType = SmoothingType.UnSmoothed;
 
